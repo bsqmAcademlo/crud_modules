@@ -1,0 +1,64 @@
+.modal-brayan {
+	background-color: #000000d5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	display: grid;
+	place-items: center;
+
+	opacity: 0;
+	visibility: hidden;
+
+	transition: opacity 0.5s, visibility 0.5s;
+}
+
+.modal-brayan-hidden {
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal__content {
+	background-color: #fff;
+	padding: 2rem;
+	border-radius: 1rem;
+	position: relative;
+}
+
+.iconClose {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	width: 25px;
+	height: 25px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	cursor: pointer;
+
+	transition: background-color 0.5s, color 0.5s;
+}
+
+.iconClose:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.iconClose span {
+	display: inline-block;
+	position: relative;
+	top: -3px;
+	font-weight: bold;
+}
+
+.modal__content__img {
+	width: 100px;
+	height: 100px;
+	background-color: #ccc;
+	border-radius: 50%;
+	margin: 0 auto;
+}
